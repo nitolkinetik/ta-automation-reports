@@ -97,11 +97,11 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4894,
+                      "duration": 7096,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🚀 ############## New Test Begin ############## 🚀\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🚀 ############## New Test Begin ############## 🚀\n"
                         },
                         {
                           "text": "🌐 GOTO / (Attempt 1/3)\n"
@@ -110,40 +110,40 @@
                           "text": "✅ 'New Patient' button found - page is healthy!\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🌟 **** Testcase - TA-2216 : Check the User Name and User Type is disabled in Edit Profile page **** 🌟\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🌟 **** Testcase - TA-2216 : Check the User Name and User Type is disabled in Edit Profile page **** 🌟\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🖱️ Going to click on Settings button...\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🖱️ Going to click on Settings button...\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: ✅ Successfully navigated to Settings Page!\n"
+                          "text": "2025-07-07 22:22 [INFO]: ✅ Successfully navigated to Settings Page!\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🖱️ Going to click on Profile button...\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🖱️ Going to click on Profile button...\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: ✅ Successfully navigated to Profile Page!\n"
+                          "text": "2025-07-07 22:22 [INFO]: ✅ Successfully navigated to Profile Page!\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🖱️ Going to Click on Edit Profile button...\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🖱️ Going to Click on Edit Profile button...\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: ✅ Successfully opened Edit Profile Modal\n"
+                          "text": "2025-07-07 22:22 [INFO]: ✅ Successfully opened Edit Profile Modal\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🖱️ Going to verify that Username Field is Uneditable...\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🖱️ Going to verify that Username Field is Uneditable...\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: ✅ Successfully Verified that Username Field is Uneditable\n"
+                          "text": "2025-07-07 22:22 [INFO]: ✅ Successfully Verified that Username Field is Uneditable\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🖱️ Going to verify that User Type Field is Uneditable...\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🖱️ Going to verify that User Type Field is Uneditable...\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: ✅ Successfully Verified that User Type Field is Uneditable\n"
+                          "text": "2025-07-07 22:22 [INFO]: ✅ Successfully Verified that User Type Field is Uneditable\n"
                         },
                         {
-                          "text": "2025-07-07 22:14 [INFO]: 🏁 ############## Test End ############## 🏁\n\n"
+                          "text": "2025-07-07 22:22 [INFO]: 🏁 ############## Test End ############## 🏁\n\n"
                         }
                       ],
                       "stderr": [],
@@ -151,22 +151,22 @@
                       "steps": [
                         {
                           "title": "Navigate to Profile Page",
-                          "duration": 613
+                          "duration": 1029
                         },
                         {
                           "title": "Open Profile Edit Modal",
-                          "duration": 133
+                          "duration": 243
                         },
                         {
                           "title": "Verify Username Field is Uneditable",
-                          "duration": 41
+                          "duration": 145
                         },
                         {
                           "title": "Verify User Type Field is Uneditable",
-                          "duration": 34
+                          "duration": 62
                         }
                       ],
-                      "startTime": "2025-07-07T16:14:23.367Z",
+                      "startTime": "2025-07-07T16:22:09.856Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -186,8 +186,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-07T16:14:09.350Z",
-    "duration": 19121.677,
+    "startTime": "2025-07-07T16:21:53.171Z",
+    "duration": 24102.13,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
