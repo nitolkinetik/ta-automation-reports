@@ -1,10 +1,10 @@
 {
-  "passed": 1,
+  "passed": 48,
   "failed": 0,
   "flaky": 0,
-  "skipped": 0,
-  "total": 1,
+  "skipped": 1,
+  "total": 49,
   "failedTests": [],
-  "duration": "0m 22s",
-  "percent": 100
+  "duration": "18m 45s",
+  "percent": 98
 }
