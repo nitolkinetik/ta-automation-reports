@@ -3,8 +3,9 @@
   "failed": 0,
   "flaky": 0,
   "skipped": 1,
-  "total": 49,
+  "total": 48,
+  "allTotal": 49,
   "failedTests": [],
-  "duration": "18m 45s",
-  "percent": 98
+  "duration": "16m 54s",
+  "percent": 100
 }
