@@ -4,5 +4,7 @@
   "flaky": 0,
   "skipped": 0,
   "total": 1,
-  "failedTests": []
+  "failedTests": [],
+  "duration": "0m 20s",
+  "percent": 100
 }
