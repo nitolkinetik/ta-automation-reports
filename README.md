@@ -44,11 +44,3 @@ All historical test reports are organized by date, time, and environment.
 ---
 *This is an automated repository. Commits are made by the Bitbucket Pipelines CI/CD process.*
 EOF
-
-# 4. Add, Commit, and Push the new README file to GitHub
-echo "--- Uploading README.md to GitHub... ---"
-git add README.md
-git commit -m "$COMMIT_MESSAGE"
-git push origin main
-
-echo "--- All done! README.md has been successfully added to your repository. ---"
