@@ -1,0 +1,207 @@
+# Page snapshot
+
+```yaml
+- img "icon"
+- img "icon"
+- img
+- link "icon Upload Trips":
+  - /url: /upload
+  - img "icon"
+  - text: Upload Trips
+- link "icon Create Trip":
+  - /url: /create
+  - img "icon"
+  - text: Create Trip
+- img "icon"
+- text: Trips
+- img "icon"
+- link "icon New Trips":
+  - /url: /new
+  - img "icon"
+  - text: New Trips
+- link "icon All Trips":
+  - /url: /trips
+  - img "icon"
+  - text: All Trips
+- link "icon Attest Trips":
+  - /url: /trips
+  - img "icon"
+  - text: Attest Trips
+- link "icon Recurring Trips":
+  - /url: /trips
+  - img "icon"
+  - text: Recurring Trips
+- link "icon Patients":
+  - /url: /patients
+  - img "icon"
+  - text: Patients
+- img "icon"
+- link "icon":
+  - /url: /notifications
+  - img "icon"
+- link "icon":
+  - /url: /settings
+  - img "icon"
+- img "icon"
+- text: Abigail Williams... Automation Care
+- link "Laura Martinez | 50123269":
+  - /url: /patients/id=afb0d55e-de83-4da9-b595-3bccff58c4bb
+- img "icon"
+- text: Back
+- img "icon"
+- text: Refresh Patient Information Emergency Contact
+- button "Edit"
+- img "icon"
+- text: Laura Martinez Name
+- img "icon"
+- text: 05/01/1995 Date Of Birth
+- img "icon"
+- text: M Sex
+- img "icon"
+- text: Insurance
+- img "icon"
+- text: 50123269 Insurance ID
+- img "icon"
+- text: Phone
+- img "icon"
+- text: Weight
+- img "icon"
+- text: Height
+- img "icon"
+- text: Address
+- img "icon"
+- text: Updated Contact Phone
+- img "icon"
+- text: "Updated Contact Address Leg #1 Ready to Dispatch Leg Details Custom Data"
+- button "Edit"
+- img "icon"
+- text: 25 W 18th St, New York, NY 10011 Pickup Address
+- img "icon"
+- text: 11 Howard St, New York, NY 10013 Dropoff Address
+- img "icon"
+- text: 07/09/2025 Pickup Date
+- img "icon"
+- text: 12:10 pm Pickup Time
+- img "icon"
+- text: Pending Appointment Time
+- img "icon"
+- text: Other Vehicle Type
+- img "icon"
+- text: Pending Dispatch ID
+- img "icon"
+- text: 1.8 Mileage
+- img "icon"
+- text: $ 0 Calculated Charge
+- img "icon"
+- text: Number Plate
+- img "icon"
+- text: License Number
+- img "icon"
+- text: 0 Adult Attendants
+- img "icon"
+- text: 0 Child Attendants
+- img "icon"
+- text: 0 Child Seats
+- img "icon"
+- text: No Oxygen Supplies
+- img "icon"
+- text: No Covid Positive
+- img "icon"
+- text: No Stairs
+- img "icon"
+- text: 0 Number Of Steps
+- img "icon"
+- text: No Service animal
+- img "icon"
+- text: No Assistance Required
+- img "icon"
+- text: 0 hr Assistance Duration
+- img "icon"
+- text: 0 units Wait Time
+- img "icon"
+- img "icon"
+- text: Medicaid County Number
+- img "icon"
+- text: Leg Instructions Notes
+- img "icon"
+- text: Events Errors Warnings Related Files
+- button "Load More" [disabled]
+- img "icon"
+- text: "Created by Abigail Williams 07/08/2025 01:40 AM EDT Leg created. Leg #2 Ready to Dispatch Leg Details Custom Data"
+- button "Edit"
+- img "icon"
+- text: 11 Howard St, New York, NY 10013 Pickup Address
+- img "icon"
+- text: 25 W 18th St, New York, NY 10011 Dropoff Address
+- img "icon"
+- text: 07/09/2025 Pickup Date
+- img "icon"
+- text: 12:40 pm Pickup Time
+- img "icon"
+- text: Pending Appointment Time
+- img "icon"
+- text: Other Vehicle Type
+- img "icon"
+- text: Pending Dispatch ID
+- img "icon"
+- text: 1.8 Mileage
+- img "icon"
+- text: $ 0 Calculated Charge
+- img "icon"
+- text: Number Plate
+- img "icon"
+- text: License Number
+- img "icon"
+- text: 0 Adult Attendants
+- img "icon"
+- text: 0 Child Attendants
+- img "icon"
+- text: 0 Child Seats
+- img "icon"
+- text: No Oxygen Supplies
+- img "icon"
+- text: No Covid Positive
+- img "icon"
+- text: No Stairs
+- img "icon"
+- text: 0 Number Of Steps
+- img "icon"
+- text: No Service animal
+- img "icon"
+- text: No Assistance Required
+- img "icon"
+- text: 0 hr Assistance Duration
+- img "icon"
+- text: 0 units Wait Time
+- img "icon"
+- img "icon"
+- text: Medicaid County Number
+- img "icon"
+- text: Leg Instructions Notes
+- img "icon"
+- text: Events Errors Warnings Related Files
+- button "Load More" [disabled]
+- img "icon"
+- text: Created by Abigail Williams 07/08/2025 01:40 AM EDT Leg created. Trip Information
+- button "Edit"
+- img "icon"
+- text: 84c8206e-e4be-4811-8d60-c7eed99bfead Remote Trip ID
+- img "icon"
+- text: Reason for Trip
+- img "icon"
+- text: Prior Authorization
+- img "icon"
+- text: Medical Answering Services Account
+- img "icon"
+- text: Referring Provider Name
+- img "icon"
+- text: Level Of Service
+- img "icon"
+- text: "Covid Status Recurring Schedule : Notes"
+- img "icon"
+- button "Edit"
+- text: Click the Edit button at the top to add notes
+- button "Open Intercom Messenger":
+  - img
+  - img
+```
