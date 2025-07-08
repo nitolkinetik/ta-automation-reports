@@ -1,0 +1,247 @@
+{
+  "config": {
+    "configFile": "/opt/atlassian/pipelines/agent/build/playwright.config.ts",
+    "rootDir": "/opt/atlassian/pipelines/agent/build/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/opt/atlassian/pipelines/agent/build/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ],
+      [
+        "/opt/atlassian/pipelines/agent/build/node_modules/allure-playwright/dist/cjs/index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/opt/atlassian/pipelines/agent/build/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/opt/atlassian/pipelines/agent/build/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tripTest/createTripTest.spec.ts",
+      "file": "tripTest/createTripTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Create Trip Test",
+          "file": "tripTest/createTripTest.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TA-4738 : Check the Pickup input field works properly",
+              "ok": false,
+              "tags": [
+                "Faiyaz",
+                "Create_Trip"
+              ],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9612,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"303 Birch St, Kingston, NY 12401, USA\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"303 Birch St, Kingston, NY 12401, USA\"\u001b[39m\n    at CreateTripPage.verifyPickupAddressSelected (/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts:300:35)\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:200:17\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:197:13",
+                        "location": {
+                          "file": "/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts",
+                          "column": 35,
+                          "line": 300
+                        },
+                        "snippet": "   at ../pages/tripPage/createTripPage.ts:300\n\n\u001b[0m \u001b[90m 298 |\u001b[39m     \u001b[36masync\u001b[39m verifyPickupAddressSelected(expectedAddress\u001b[33m:\u001b[39m string) {\n \u001b[90m 299 |\u001b[39m         \u001b[36mconst\u001b[39m selectedValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocators\u001b[33m.\u001b[39mpickupAddressInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 300 |\u001b[39m         expect(selectedValue)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBe(expectedAddress)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 301 |\u001b[39m     }\n \u001b[90m 302 |\u001b[39m\n \u001b[90m 303 |\u001b[39m     \u001b[36masync\u001b[39m verifyDropoffAddressSelected(expectedAddress\u001b[33m:\u001b[39m string) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts",
+                            "column": 35,
+                            "line": 300
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"303 Birch St, Kingston, NY 12401, USA\"\u001b[39m\n\n   at ../pages/tripPage/createTripPage.ts:300\n\n  298 |     async verifyPickupAddressSelected(expectedAddress: string) {\n  299 |         const selectedValue = await this.locators.pickupAddressInput.inputValue();\n> 300 |         expect(selectedValue).not.toBe(expectedAddress);\n      |                                   ^\n  301 |     }\n  302 |\n  303 |     async verifyDropoffAddressSelected(expectedAddress: string) {\n    at CreateTripPage.verifyPickupAddressSelected (/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts:300:35)\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:200:17\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:197:13"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🚀 ############## New Test Begin ############## 🚀\n"
+                        },
+                        {
+                          "text": "🌐 GOTO / (Attempt 1/3)\n"
+                        },
+                        {
+                          "text": "✅ 'New Patient' button found - page is healthy!\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🌟 **** Testcase - TA-4738 : Check the Pickup input field works properly **** 🌟\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🖱️ Going to input in patient searchbox...\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: ✅ Successfully inputted patient name!\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🖱️ Going To verify Patient Name in searchlist...\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: ✅ Searched Patient Name Verified!\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🖱️ Going To Select Account...\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: ✅ Account Gets Selected!\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🖱️ Going To Click Next Button...\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: ✅ Clicked Next Button!\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🖱️ Going To Verify Pickup Address input field...\n"
+                        },
+                        {
+                          "text": "2025-07-08 12:56 [INFO]: 🏁 ############## Test End ############## 🏁\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Search Patient",
+                          "duration": 345
+                        },
+                        {
+                          "title": "Verify Searched Patient Name",
+                          "duration": 68
+                        },
+                        {
+                          "title": "Select Account",
+                          "duration": 763
+                        },
+                        {
+                          "title": "Click Next Button",
+                          "duration": 315
+                        },
+                        {
+                          "title": "Verify Pickup Address input works",
+                          "duration": 2602,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"303 Birch St, Kingston, NY 12401, USA\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"303 Birch St, Kingston, NY 12401, USA\"\u001b[39m\n    at CreateTripPage.verifyPickupAddressSelected (/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts:300:35)\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:200:17\n    at /opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts:197:13",
+                            "location": {
+                              "file": "/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts",
+                              "column": 35,
+                              "line": 300
+                            },
+                            "snippet": "   at ../pages/tripPage/createTripPage.ts:300\n\n\u001b[0m \u001b[90m 298 |\u001b[39m     \u001b[36masync\u001b[39m verifyPickupAddressSelected(expectedAddress\u001b[33m:\u001b[39m string) {\n \u001b[90m 299 |\u001b[39m         \u001b[36mconst\u001b[39m selectedValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlocators\u001b[33m.\u001b[39mpickupAddressInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 300 |\u001b[39m         expect(selectedValue)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoBe(expectedAddress)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 301 |\u001b[39m     }\n \u001b[90m 302 |\u001b[39m\n \u001b[90m 303 |\u001b[39m     \u001b[36masync\u001b[39m verifyDropoffAddressSelected(expectedAddress\u001b[33m:\u001b[39m string) {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-07-08T06:56:24.767Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/opt/atlassian/pipelines/agent/build/test-results/tripTest-createTripTest-Cr-31a47--input-field-works-properly-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/opt/atlassian/pipelines/agent/build/test-results/tripTest-createTripTest-Cr-31a47--input-field-works-properly-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/opt/atlassian/pipelines/agent/build/test-results/tripTest-createTripTest-Cr-31a47--input-field-works-properly-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/opt/atlassian/pipelines/agent/build/pages/tripPage/createTripPage.ts",
+                        "column": 35,
+                        "line": 300
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "67e9e10259c306d82ad6-ba1cb7a69df3b9dcb8b7",
+              "file": "tripTest/createTripTest.spec.ts",
+              "line": 163,
+              "column": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-08T06:56:11.385Z",
+    "duration": 23640.559999999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
