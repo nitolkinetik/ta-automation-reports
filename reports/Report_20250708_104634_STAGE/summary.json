@@ -1,0 +1,14 @@
+{
+  "passed": 46,
+  "failed": 2,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 48,
+  "allTotal": 49,
+  "failedTests": [
+    "TA-4739 : Check the Dropoff input field works properly",
+    "TA-5565 : Check a non-insurance trip can be created with the Medical Answering Services account"
+  ],
+  "duration": "15m 48s",
+  "percent": 96
+}
