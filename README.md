@@ -39,7 +39,7 @@ All historical test reports are organized by date, time, and environment.
 * **Main Index:** [**https://nitolkinetik.github.io/ta-automation-reports/**](https://nitolkinetik.github.io/ta-automation-reports/)
 * **Directory Structure:** All reports are stored under the \`/reports/\` directory.
 * **Example Direct Link:** A link to a specific report will look like this:
-    \`https://nitolkinetik.github.io/ta-automation-reports/reports/20250708_142013_STAGE/index.html\`
+    \`https://nitolkinetik.github.io/ta-automation-reports/reports/Reports_20250708_142013_STAGE/index.html\`
 
 ---
 *This is an automated repository. Commits are made by the Bitbucket Pipelines CI/CD process.*
