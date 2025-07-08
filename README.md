@@ -27,7 +27,7 @@ The reporting process is fully automated through our Bitbucket pipeline:
 1.  **Test Execution:** A pipeline is triggered in Bitbucket, either manually or on a schedule.
 2.  **Report Generation:** The pipeline runs the full suite of Playwright tests. Upon completion, Playwright generates a self-contained HTML report (\`playwright-report\`).
 3.  **Checkout and Copy:** A subsequent step in the pipeline securely checks out this \`ta-automation-reports\` repository.
-4.  **Directory Creation:** It creates a new directory named with a unique timestamp and the target environment (e.g., \`reports/20250708_142013_STAGE/\`).
+4.  **Directory Creation:** It creates a new directory named with a unique timestamp and the target environment (e.g., \`reports/20250708_142013_${ENVIRONMENT}/\`).
 5.  **Commit and Push:** The pipeline copies the \`playwright-report\` contents into the new directory, commits the files, and pushes them to the \`main\` branch of this repository.
 6.  **Deployment:** GitHub Pages automatically detects the new commit and deploys the changes, making the new report instantly available online.
 7.  **Notification:** A final pipeline step sends a notification to our team's Slack channel with a summary of the results and a direct link to the newly published report.
@@ -39,7 +39,7 @@ All historical test reports are organized by date, time, and environment.
 * **Main Index:** [**https://nitolkinetik.github.io/ta-automation-reports/**](https://nitolkinetik.github.io/ta-automation-reports/)
 * **Directory Structure:** All reports are stored under the \`/reports/\` directory.
 * **Example Direct Link:** A link to a specific report will look like this:
-    \`https://nitolkinetik.github.io/ta-automation-reports/reports/Reports_20250708_142013_STAGE/index.html\`
+    \`https://nitolkinetik.github.io/ta-automation-reports/reports/Reports_20250708_142013_${ENVIRONMENT/index.html\`
 
 ---
 *This is an automated repository. Commits are made by the Bitbucket Pipelines CI/CD process.*
