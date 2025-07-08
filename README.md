@@ -1,24 +1,3 @@
-# --- Configuration ---
-REPO_URL="https://github.com/nitolkinetik/ta-automation-reports.git"
-REPO_DIR="ta-automation-reports"
-COMMIT_MESSAGE="docs: Add project README"
-
-# --- Script Steps ---
-
-# Clean up previous directory if it exists, to ensure a fresh start
-echo "--- Cleaning up old directory if it exists... ---"
-rm -rf $REPO_DIR
-
-# 1. Clone the repository from GitHub
-echo "--- Cloning repository... ---"
-git clone $REPO_URL
-
-# 2. Change into the repository's directory
-cd $REPO_DIR
-
-# 3. Create the README.md file with the full content
-echo "--- Creating README.md file... ---"
-cat << EOF > README.md
 # 📊 TA Automation Test Reports
 
 ![Playwright](https://img.shields.io/badge/Playwright-v1.52.0-2EAD33?style=for-the-badge&logo=playwright)
