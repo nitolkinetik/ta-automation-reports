@@ -1,5 +1,3 @@
-# === Copy and paste the entire script below ===
-
 # --- Configuration ---
 REPO_URL="https://github.com/nitolkinetik/ta-automation-reports.git"
 REPO_DIR="ta-automation-reports"
