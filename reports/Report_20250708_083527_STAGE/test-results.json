@@ -1,0 +1,83 @@
+{
+  "config": {
+    "configFile": "/opt/atlassian/pipelines/agent/build/playwright.config.ts",
+    "rootDir": "/opt/atlassian/pipelines/agent/build/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": "/opt/atlassian/pipelines/agent/build/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/test-results.json"
+        }
+      ],
+      [
+        "/opt/atlassian/pipelines/agent/build/node_modules/allure-playwright/dist/cjs/index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/opt/atlassian/pipelines/agent/build/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/opt/atlassian/pipelines/agent/build/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: item focused with '.only' is not allowed due to the 'forbidOnly' option in '../playwright.config.ts': \"tripTest/createTripTest.spec.ts Create Trip Test TA-4738 : Check the Pickup input field works properly\"",
+      "location": {
+        "file": "/opt/atlassian/pipelines/agent/build/tests/tripTest/createTripTest.spec.ts",
+        "line": 163,
+        "column": 10
+      },
+      "snippet": "   at tripTest/createTripTest.spec.ts:163\n\n\u001b[0m \u001b[90m 161 |\u001b[39m     )\u001b[33m;\u001b[39m\n \u001b[90m 162 |\u001b[39m     \u001b[90m/* --------------------------------------- END TEST -----------------------------------------------   */\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 163 |\u001b[39m     test\u001b[33m.\u001b[39monly(\n \u001b[90m     |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 164 |\u001b[39m         \u001b[32m\"TA-4738 : Check the Pickup input field works properly\"\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 165 |\u001b[39m         {\n \u001b[90m 166 |\u001b[39m             tag\u001b[33m:\u001b[39m [\u001b[33mAuthor\u001b[39m\u001b[33m.\u001b[39m\u001b[33mFAIYAZ\u001b[39m\u001b[33m,\u001b[39m \u001b[33mModule\u001b[39m\u001b[33m.\u001b[39m\u001b[33mCREATE_TRIP\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m"
+    }
+  ],
+  "stats": {
+    "startTime": "2025-07-08T08:35:09.666Z",
+    "duration": 10816.836000000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
