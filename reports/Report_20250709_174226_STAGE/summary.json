@@ -1,0 +1,21 @@
+{
+  "passed": 39,
+  "failed": 9,
+  "flaky": 0,
+  "skipped": 1,
+  "total": 48,
+  "allTotal": 49,
+  "failedTests": [
+    "TA-5569 : Deactivated Patient gets Activated",
+    "TA-2218 : Check the Last Name can be edited successfully",
+    "TA-2220 : Check the Phone Number can be edited successfully",
+    "TA-5564 : Check a professional trip can be created with the Medical Answering Services account",
+    "TA-5565 : Check a non-insurance trip can be created with the Medical Answering Services account",
+    "TA-14274 : Create 2 Legs Professional trip (with Required Fields only)",
+    "TA-14275 : Create 3 Legs Professional trip (with Required Fields only)",
+    "TA-14276 : Create 2 Legs Non-Insurance trip (with Required Fields only)",
+    "TA-14277 : Create 3 Legs Non-Insurance trip (with Required Fields only)"
+  ],
+  "duration": "18m 14s",
+  "percent": 81
+}
